@@ -443,7 +443,8 @@
         }
         console.log(postData);
         $.post("save.php", { data: postData }, function (result) {
-          alert(result);
+          alert('success');
+          window.location.reload('/');
         });
       });
       $("#dateAdd").click(() => {
